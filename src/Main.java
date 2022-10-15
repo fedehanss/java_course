@@ -25,7 +25,7 @@ public class Main {
         System.out.println(grade1);
 
 
-        String gradeMessage = gradeChecker("");             //USES A SWITCH
+        String gradeMessage = gradeChecker("A");             //USES A SWITCH
         System.out.println(gradeMessage);
 
         myLoop(0,5);        //SIMPLE WHILE LOOP
@@ -35,8 +35,6 @@ public class Main {
         loopNestedWithEnhanced();
 
         System.out.println(calculateTwoNumbers(2, 4));          //CREATED WITHIN THIS CLASS
-
-
 
     }
 }
