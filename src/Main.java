@@ -12,11 +12,8 @@ public class Main {
         return a * b;
     }
     public static void main(String[] args) {
-
-        String prop1 = IfStatements.myProperty;
-        System.out.println(prop1);
-
-        int salaryResult = bonusCalculator(salaryCalculator(120, 70), 800, 11);
+                                                                                                      //SALARYCALC COMES FROM GROSSPAYCALC
+        int salaryResult = bonusCalculator(salaryCalculator(120, 70), 800, 11);     //BONUS CALC COMES FROM IFSTATEMENTS
         System.out.println(salaryResult);
 
         String loan1 = loanOperator(31000, 23);
@@ -24,22 +21,20 @@ public class Main {
 
         ElseIf myGradeEval = new ElseIf();      //OBJECT WAS INSTANTIATED BECAUSE THE METHOD IS NOT STATIC.
 
-        String grade1 = myGradeEval.checkScore(1);
+        String grade1 = myGradeEval.checkScore(1);    //FROM ELSEIF CLASS
         System.out.println(grade1);
 
 
-        String gradeMessage = gradeChecker("");
+        String gradeMessage = gradeChecker("");             //USES A SWITCH
         System.out.println(gradeMessage);
 
         myLoop(0,5);        //SIMPLE WHILE LOOP
 
         myForLoop();
-
         loopNestedArray();
-
         loopNestedWithEnhanced();
 
-        System.out.println(calculateTwoNumbers(2, 4));
+        System.out.println(calculateTwoNumbers(2, 4));          //CREATED WITHIN THIS CLASS
 
 
 

@@ -16,6 +16,4 @@ public class ElseIf {
         } else return "You are suspended from classes.";
 
     }
-
-
 }
