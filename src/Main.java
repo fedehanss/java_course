@@ -1,5 +1,5 @@
 import topics.ElseIf;
-import topics.IfStatements;
+import java.util.ArrayList;
 
 import static topics.GrossPayCalc.*;
 import static topics.IfStatements.*;
@@ -8,10 +8,16 @@ import static topics.Switch.*;
 import static topics.While.*;
 import static topics.ForLoop.*;
 public class Main {
+
+
+
     static int calculateTwoNumbers(int a, int b) {
         return a * b;
     }
     public static void main(String[] args) {
+
+        int num1 = 2;
+        int num2 = 4;
                                                                                                       //SALARYCALC COMES FROM GROSSPAYCALC
         int salaryResult = bonusCalculator(salaryCalculator(120, 70), 800, 11);     //BONUS CALC COMES FROM IFSTATEMENTS
         System.out.println(salaryResult);
@@ -30,11 +36,23 @@ public class Main {
 
         myLoop(0,5);        //SIMPLE WHILE LOOP
 
+
         myForLoop();
         loopNestedArray();
         loopNestedWithEnhanced();
 
-        System.out.println(calculateTwoNumbers(2, 4));          //CREATED WITHIN THIS CLASS
+        System.out.println(calculateTwoNumbers(num1, num2));          //CREATED WITHIN THIS CLASS
+
+        System.out.println();
+
+
+        ArrayList<Integer> myArray1 = new ArrayList<>();
+
+        myArray1.add(1);
+
+        System.out.println(myArray1.size());
+        System.out.println(myArray1);
+
 
     }
 }
